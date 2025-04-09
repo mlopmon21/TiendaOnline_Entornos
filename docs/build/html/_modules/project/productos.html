@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+
+<html lang="es" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>project.productos &#8212; documentación de Proyecto Tienda Online Entornos - 1</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=4f649999" />
+    <link rel="stylesheet" type="text/css" href="../../_static/alabaster.css?v=cb25574f" />
+    <script src="../../_static/documentation_options.js?v=92345faf"></script>
+    <script src="../../_static/doctools.js?v=888ff710"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/translations.js?v=efdbd0b9"></script>
+    <link rel="index" title="Índice" href="../../genindex.html" />
+    <link rel="search" title="Búsqueda" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Código fuente para project.productos</h1><div class="highlight"><pre>
+<div class="viewcode-block" id="Producto">
+<a class="viewcode-back" href="../../project.html#project.productos.Producto">[documentos]</a>
+<span></span><span class="k">class</span> <span class="nc">Producto</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Clase objeto que representa un producto.</span>
+<span class="sd">    &quot;&quot;&quot;</span>    
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">id_producto</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">nombre</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">precio</span><span class="p">:</span> <span class="nb">float</span><span class="p">,</span> <span class="n">stock</span><span class="p">:</span> <span class="nb">int</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Inicializa un nuevo producto con los datos proporcionados.</span>
+
+<span class="sd">        :param id_producto: Identificador único del producto.</span>
+<span class="sd">        :type id_producto: str</span>
+<span class="sd">        :param nombre: Nombre del producto.</span>
+<span class="sd">        :type nombre: str</span>
+<span class="sd">        :param precio: Precio del producto.</span>
+<span class="sd">        :type precio: float</span>
+<span class="sd">        :param stock: Cantidad disponible en stock.</span>
+<span class="sd">        :type stock: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>        
+        <span class="bp">self</span><span class="o">.</span><span class="n">__id_producto</span> <span class="o">=</span> <span class="n">id_producto</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__nombre</span> <span class="o">=</span> <span class="n">nombre</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__precio</span> <span class="o">=</span> <span class="n">precio</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__stock</span> <span class="o">=</span> <span class="n">stock</span>
+
+    <span class="c1">### GETTER y SETTER id_producto ###</span>
+
+<div class="viewcode-block" id="Producto.get_id_producto">
+<a class="viewcode-back" href="../../project.html#project.productos.Producto.get_id_producto">[documentos]</a>
+    <span class="k">def</span> <span class="nf">get_id_producto</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Obtiene el identificador del producto.</span>
+
+<span class="sd">        :return: El identificador del producto.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__id_producto</span></div>
+
+    
+<div class="viewcode-block" id="Producto.set_id_producto">
+<a class="viewcode-back" href="../../project.html#project.productos.Producto.set_id_producto">[documentos]</a>
+    <span class="k">def</span> <span class="nf">set_id_producto</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">id_producto</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Asigna un nuevo identificador al producto.</span>
+
+<span class="sd">        :param id_producto: Nuevo identificador del producto.</span>
+<span class="sd">        :type id_producto: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>        
+        <span class="bp">self</span><span class="o">.</span><span class="n">__id_producto</span> <span class="o">=</span> <span class="n">id_producto</span></div>
+
+
+    <span class="c1">### GETTER y SETTER nombre ###</span>
+
+<div class="viewcode-block" id="Producto.get_nombre">
+<a class="viewcode-back" href="../../project.html#project.productos.Producto.get_nombre">[documentos]</a>
+    <span class="k">def</span> <span class="nf">get_nombre</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Obtiene el nombre del producto.</span>
+
+<span class="sd">        :return: El nombre del producto.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__nombre</span></div>
+
+    
+<div class="viewcode-block" id="Producto.set_nombre">
+<a class="viewcode-back" href="../../project.html#project.productos.Producto.set_nombre">[documentos]</a>
+    <span class="k">def</span> <span class="nf">set_nombre</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">nombre</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Asigna un nuevo nombre al producto.</span>
+
+<span class="sd">        :param nombre: Nuevo nombre del producto.</span>
+<span class="sd">        :type nombre: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>        
+        <span class="bp">self</span><span class="o">.</span><span class="n">__nombre</span> <span class="o">=</span> <span class="n">nombre</span></div>
+
+
+    <span class="c1">### GETTER y SETTER precio ###</span>
+
+<div class="viewcode-block" id="Producto.get_precio">
+<a class="viewcode-back" href="../../project.html#project.productos.Producto.get_precio">[documentos]</a>
+    <span class="k">def</span> <span class="nf">get_precio</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Obtiene el precio del producto.</span>
+
+<span class="sd">        :return: El precio del producto.</span>
+<span class="sd">        :rtype: float</span>
+<span class="sd">        &quot;&quot;&quot;</span>        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__precio</span></div>
+
+    
+<div class="viewcode-block" id="Producto.set_precio">
+<a class="viewcode-back" href="../../project.html#project.productos.Producto.set_precio">[documentos]</a>
+    <span class="k">def</span> <span class="nf">set_precio</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">precio</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Asigna un nuevo precio al producto.</span>
+
+<span class="sd">        :param precio: Nuevo precio del producto.</span>
+<span class="sd">        :type precio: float</span>
+<span class="sd">        &quot;&quot;&quot;</span>        
+        <span class="bp">self</span><span class="o">.</span><span class="n">__precio</span> <span class="o">=</span> <span class="n">precio</span></div>
+
+
+    <span class="c1">### GETTER y SETTER stock ###</span>
+
+<div class="viewcode-block" id="Producto.get_stock">
+<a class="viewcode-back" href="../../project.html#project.productos.Producto.get_stock">[documentos]</a>
+    <span class="k">def</span> <span class="nf">get_stock</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Obtiene la cantidad disponible en stock del producto.</span>
+
+<span class="sd">        :return: La cantidad en stock del producto.</span>
+<span class="sd">        :rtype: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>        
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__stock</span></div>
+
+    
+<div class="viewcode-block" id="Producto.set_stock">
+<a class="viewcode-back" href="../../project.html#project.productos.Producto.set_stock">[documentos]</a>
+    <span class="k">def</span> <span class="nf">set_stock</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stock</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Asigna una nueva cantidad en stock al producto.</span>
+
+<span class="sd">        :param stock: Nueva cantidad en stock del producto.</span>
+<span class="sd">        :type stock: int</span>
+<span class="sd">        &quot;&quot;&quot;</span>        
+        <span class="bp">self</span><span class="o">.</span><span class="n">__stock</span> <span class="o">=</span> <span class="n">stock</span></div>
+
+
+    <span class="c1">### Construimos la impresión por pantalla ###</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Devuelve una representación en cadena de la información del producto.</span>
+
+<span class="sd">        :return: Información detallada del producto, incluyendo su código, nombre, precio y stock.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>        
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">- Código: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__id_producto</span><span class="si">}</span><span class="se">\n</span><span class="s1">- Nombre: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__nombre</span><span class="si">}</span><span class="se">\n</span><span class="s1">- Precio: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__precio</span><span class="si">}</span><span class="s1"> €</span><span class="se">\n</span><span class="s1">- Stock: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__stock</span><span class="si">}</span><span class="s1"> unidades&#39;</span>
+    
+    <span class="c1">### Método para actualizar el stock ###</span>
+
+<div class="viewcode-block" id="Producto.actualizar_stock">
+<a class="viewcode-back" href="../../project.html#project.productos.Producto.actualizar_stock">[documentos]</a>
+    <span class="k">def</span> <span class="nf">actualizar_stock</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">stock</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Actualiza la cantidad disponible en stock del producto.</span>
+
+<span class="sd">        :param stock: Nueva cantidad en stock del producto.</span>
+<span class="sd">        :type stock: int</span>
+<span class="sd">        :return: Mensaje con la nueva cantidad de stock del producto.</span>
+<span class="sd">        :rtype: str</span>
+<span class="sd">        &quot;&quot;&quot;</span>        
+        <span class="bp">self</span><span class="o">.</span><span class="n">set_stock</span><span class="p">(</span><span class="n">stock</span><span class="p">)</span>   
+        <span class="k">return</span> <span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__nombre</span><span class="si">}</span><span class="s1"> tiene de stock </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">__stock</span><span class="si">}</span><span class="s1"> unidades&#39;</span></div>
+</div>
+
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">Proyecto Tienda Online Entornos</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navegación</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">project</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Código de módulo</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Búsqueda rápida</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Ir a" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2025, Maria del Mar Lopez Montoya.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 7.2.6</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
