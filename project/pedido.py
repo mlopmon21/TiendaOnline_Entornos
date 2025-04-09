@@ -127,4 +127,3 @@ class Pedido:
         :rtype: str
         """
         return f'\n- Pedido: {self.__id_pedido}\n- Cliente: {self.__cliente.get_nombre()}\n- Fecha: {self.__fecha}\n- Lista Productos: {self.__productos}'
-   

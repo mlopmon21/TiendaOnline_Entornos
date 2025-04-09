@@ -1,27 +1,44 @@
-# TiendaOnline_Entornos
-
-Aplicación desarrollada como proyecto para el módulo de **Entornos de Desarrollo** en el CFGS de **Desarrollo de Aplicaciones Web (DAW)** en el **IES Abdera (Almería)**.
-
-Este proyecto simula una tienda online sencilla que permite gestionar productos físicos y digitales, clientes, pedidos y reseñas, todo desde una interfaz por consola.
-
----
-
-## Funcionalidades
-
-- Gestión de Clientes (alta, modificación, listado)
-- Gestión de Productos:
-  - Productos físicos
-  - Productos digitales (formato y tamaño)
-- Gestión de Pedidos
-  - Relación cliente-productos
-  - Cálculo del total
-- Gestión de Reseñas
-  - Comentarios sobre productos
-  - Puntuaciones
+# Manual Técnico del Proyecto
+## IES Abdera de Adra (Almería)
+### CFGS Desarrollo de Aplicaciones Web (DAW)
+#### Curso 2024-2025
 
 ---
 
-## Estructura del proyecto
+## 1. Información General
+- **Nombre del Proyecto:** Tienda Online
+- **Autores:** Maria del Mar Lopez Montoya
+- **Fecha de creación:** 09-04-2025
+- **Última actualización:** 11-04-2025 
+- **Profesor Responsable:** José Ramón Rivas Cano
+
+---
+
+## 2. Descripción del Proyecto
+Este software es una aplicación de gestión para una tienda online que permite administrar productos, clientes, pedidos y reseñas. Está construida utilizando Python y proporciona una interfaz de línea de comandos interactiva para gestionar todos los aspectos de la tienda.
+
+El proyecto se organiza en varias clases que representan las entidades principales (Producto, Cliente, Pedido, Reseña) y en un conjunto de menús que permiten realizar las operaciones correspondientes sobre ellas.
+
+El objetivo es crear un sistema funcional para gestionar productos físicos y digitales, clientes, pedidos y reseñas, todo a través de una interfaz sencilla en la consola.
+
+---
+
+## 3. Tecnologías Utilizadas
+Listado de tecnologías empleadas en el desarrollo:
+- **Backend:** Python  
+- **Control de Versiones:** Git y GitHub  
+
+---
+
+## 4. Requisitos Previos
+Lista de software necesario para ejecutar el proyecto:
+- Python/PHP y dependencias necesarias  
+- Git  
+
+---
+
+## 5. Estructura del Proyecto
+.
 ├── docs
 │   ├── build
 │   │   ├── doctrees
@@ -98,32 +115,51 @@ Este proyecto simula una tienda online sencilla que permite gestionar productos 
 
 ---
 
-## Ejecución del programa
+## 6. Instalación y Configuración
+Instalar Python, funciona en Windows, Linux y MacOS
 
-1. Asegúrate de tener **Python 3.12 o más instalado.
-2. Ejecuta el archivo principal:
+(Opcional) Instalar Visual Studio Code para jecutarlo o hacerlo desde la terminal con comando: python3 + [nombre_archivo].py
 
-```bash
-python main.py
-Navega por el menú utilizando los números del 1 al 5.
+---
 
-🛠️ Tecnologías utilizadas
-Python (POO - Programación Orientada a Objetos)
+## 7. Base de Datos
+- Se implementará en futuras actualizaciones.
 
-Uso de menús y diccionarios para manejar datos
+---
 
-No requiere base de datos ni librerías externas
+## 8. API y Endpoints
+- En un futuro se implementará actualmente no tiene.
 
-📌 Notas importantes
-Los datos no se guardan en archivos ni bases de datos: se mantienen en memoria durante la ejecución.
+## 9. Seguridad
+- Valicación de datos pendiente de realizar.
 
-Proyecto académico para aprendizaje de programación orientada a objetos.
+## 10. Configuración del Servidor Web
+- No aplica.
 
-👩‍🎓 Autor
-Nombre: Maria del Mar Lopez Montoya
-Curso: 1º DAW - IES Abdera
-Proyecto: Módulo de Entornos de Desarrollo
-Año: 2025
+---
 
-📄 Licencia
-Este proyecto es de uso educativo y no tiene fines comerciales.
+## 11. Pruebas y Debugging
+- No aplica.
+
+---
+
+## 12. Uso de Inteligencia Artificial
+-No aplica.
+
+---
+
+## 13. Despliegue en Producción
+- No aplica. 
+
+---
+
+## 14. Conclusión
+- Evaluación del desarrollo  
+- Posibles mejoras futuras  
+
+---
+
+## 15. Créditos y Referencias
+- Profesorado y alumnado 1º DAW.
+
+---
