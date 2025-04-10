@@ -38,6 +38,8 @@ Lista de software necesario para ejecutar el proyecto:
 ---
 
 ## 5. Estructura del Proyecto
+
+```plaintext
 .
 ├── docs
 │   ├── build
@@ -111,8 +113,7 @@ Lista de software necesario para ejecutar el proyecto:
 │   │   └── reseña.cpython-312.pyc
 │   └── reseña.py
 └── README.md
-
-
+```
 ---
 
 ## 6. Instalación y Configuración

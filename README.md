@@ -22,6 +22,7 @@ Este proyecto simula una tienda online sencilla que permite gestionar productos 
 ---
 
 ## Estructura del proyecto
+```plaintext
 ├── docs
 │   ├── build
 │   │   ├── doctrees
@@ -94,8 +95,7 @@ Este proyecto simula una tienda online sencilla que permite gestionar productos 
 │   │   └── reseña.cpython-312.pyc
 │   └── reseña.py
 └── README.md
-
-
+```
 ---
 
 ## Ejecución del programa
